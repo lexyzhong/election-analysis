@@ -1,21 +1,30 @@
 # Election-Analysis
 
 ## Overview if Election Audit
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
+A Colorado Board of Elections employee has requested the following to complete the election audit of a recent local congressional election:
 
 1. Calculate the total number of votes cast.
-2. Get a complete list of candidates who received votes.
-3. Calculate the total number of votes each candidate received.
-4. Calculate the percentage of votes each candidate won.
-5. Determine the winner of the election based on popular votes.
+2. Get a complete list of counties from which the votes were cast.
+3. Calculate the total number of votes cast from each county.
+4. Calculate the percentage of votes cast from each county.
+5. Determine the county that cast the highest number of votes.
+6. Get a complete list of candidates who received votes.
+7. Calculate the total number of votes each candidate received.
+8. Calculate the percentage of votes each candidate won.
+9. Determine the winner of the election based on popular votes.
 
 
 ## Resources
 - Data Source: election_results.csv
-- Software: Pthon 3.6.1, Visual Studio Code, 1.38.1
+- Software: Pthon 3.6.1, Visual Studio Code, 1.62.3
 
 ## Election-Audit Results
 The analysis of the election show that:
+
+![election-results_command-line.png](https://github.com/lexyzhong/election-analysis/blob/main/Resources/election-results_command-line.png)
+
+![election_analysis.txt](https://github.com/lexyzhong/election-analysis/blob/main/analysis/election_analysis.txt)
+
 - There were 369,711 votes cast in the election.
 - The counties were:
     - Jefferson
@@ -39,5 +48,4 @@ The analysis of the election show that:
     - Diana DeGette received 73.8% of the vote and 272,892 votes.
 
 ## Election-Audit Summary
-- business proposal to election commission on how this script could be used--with some modifications--for any election
-- 2 examples of how modified
+With minor modifications, this script can be used for any election. For federal elections, the "county"/"counties" in the script should be changed to "state"/"states". For public opinion or initiative polls, instead of a list of candidates, the polling options can be changed to, for example, "in favor of" or "against". For determinations of voter turnout in areas where the total number of eligible voters are available, an additional line to calculate the percentage of votes cast over the total number of eligible voters can be added.
