@@ -1,6 +1,6 @@
 # Election-Analysis
 
-## Overview if Election Audit
+## Overview of Election Audit
 A Colorado Board of Elections employee has requested the following to complete the election audit of a recent local congressional election:
 
 1. Calculate the total number of votes cast.
